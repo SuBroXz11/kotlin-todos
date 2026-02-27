@@ -1,54 +1,35 @@
-# ✅ TaskFlow Todo App
+# Simple Todo App
 
-A simple, secure, and efficient application to manage your daily tasks.
+A basic task management application with user authentication.
 
 ---
 
-## 🔑 Authentication
+## 🔐 User Authentication
 
 ### Register
 
-- **Fields:** `Username`, `Email`, `Password`
-- **Action:** Create a new account to sync your todos across devices.
+- **Fields:** Username, Email, Password
+- **Action:** Create a new account.
 
 ### Sign In
 
-- **Fields:** `Email`, `Password`
-- **Action:** Securely access your personal task dashboard.
+- **Fields:** Email, Password
+- **Action:** Access your personal todo list.
 
 ---
 
-## 📝 Core Features
+## 📝 Todo Features
 
-### 🛠 Task Management
-
-- **Create:** Add new tasks instantly.
-- **Read:** View a list of all your current tasks.
-- **Update:** Edit the content of existing tasks if your requirements change.
-- **Delete:** Permanently remove tasks from your list.
-
-### ✅ Status Tracking
-
-- **Complete:** Mark tasks as done with a single click.
-- **Incomplete:** Revert tasks back to "to-do" if they need more work.
+- **Create:** Add a new todo item to the list.
+- **Update:** Edit the text of an existing todo.
+- **Delete:** Remove a todo from the list.
+- **Toggle Status:** Mark tasks as **Completed** or **Incomplete**.
 
 ---
 
-## 🚀 API Roadmap (Internal)
+## ✅ Planned Workflow
 
-| Method   | Endpoint     | Description            |
-| :------- | :----------- | :--------------------- |
-| `POST`   | `/register`  | Sign up a new user     |
-| `POST`   | `/login`     | Authenticate user      |
-| `GET`    | `/todos`     | Fetch all user todos   |
-| `POST`   | `/todos`     | Add a new todo         |
-| `PUT`    | `/todos/:id` | Update text or status  |
-| `DELETE` | `/todos/:id` | Delete a specific todo |
-
----
-
-## 🛠 Tech Stack (Suggested)
-
-- **Frontend:** React / Tailwind CSS
-- **Backend:** Node.js / Express
-- **Database:** MongoDB or SQLite
+1. User registers or logs in.
+2. User sees their list of tasks.
+3. User can add, edit, or delete tasks.
+4. User can check off tasks as they finish them.
