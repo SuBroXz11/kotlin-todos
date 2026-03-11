@@ -7,7 +7,14 @@ import androidx.navigation.compose.*
 fun AppNavigation() {
     val navController = rememberNavController()
 
-    NavHost(navController = navController, startDestination = "login") {
+    NavHost(navController = navController, startDestination = "splash") {
+        composable("splash") {
+            SplashScreen(
+                onSplashFinished = { navController.navigate("login") {
+                    popUpTo("splash") { inclusive = true }
+                }}
+            )
+        }
 
         composable("login") {
             LoginScreen(
